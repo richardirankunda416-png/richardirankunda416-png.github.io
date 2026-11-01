@@ -142,6 +142,13 @@ h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -.005em; }
 .proj ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; max-width: 64ch; font-size: 16px; }
 .proj ul li::marker { color: var(--accent); }
 
+.proof { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; margin-top: 6px; width: fit-content; max-width: 100%; }
+.proof img { flex: none; width: 128px; height: 88px; object-fit: cover; object-position: top; border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); }
+.proof span { font: 500 12px/1.4 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--teal); text-decoration: underline; text-underline-offset: 4px; }
+.proof:hover span { color: var(--accent); }
+.proof:hover img { border-color: var(--teal); }
+.refs { display: grid; gap: 16px; }
+
 /* recommendation */
 .ref { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 26px; display: grid; gap: 14px; max-width: 640px; }
 .ref .who { display: flex; gap: 16px; align-items: center; }
@@ -370,8 +377,10 @@ button.copy:hover { background: var(--accent); color: var(--accent-ink); }
           <ul>
             <li>Collected, checked and recorded household data nationwide, following the national methodology and protocols.</li>
             <li>Covered a fixed number of households each day across more than 500 households.</li>
+            <li>Assigned to Kiganda commune, Gitega province, for one month from 26 August 2024.</li>
             <li>Kept the data accurate and reported inconsistencies for review. Received a certificate of services rendered.</li>
           </ul>
+          <a class="proof" href="attestation-rgphae.jpg" target="_blank" rel="noopener"><img src="attestation-rgphae.jpg" alt="Certificate of services rendered from the Central Bureau of the Census (BCR), RGPHAE 2024" loading="lazy" width="128" height="88"><span>View certificate of services ↗</span></a>
         </article>
         <article>
           <div class="top"><h3>Retail distribution and customer feedback</h3><span class="when">2022 – present</span></div>
@@ -384,26 +393,31 @@ button.copy:hover { background: var(--accent); color: var(--accent-ink); }
           </ul>
         </article>
         <article>
-          <div class="top"><h3>AI-Integrated Leadership Program</h3><span class="when">2025 – 2026</span></div>
+          <div class="top"><h3>AI-Integrated Leadership Program</h3><span class="when">2026</span></div>
           <p class="org">Aspire Institute · Online program</p>
           <ul>
+            <li>Eight weeks and 30 hours of learning on communication, negotiation, AI-informed decision-making and strategic problem-solving.</li>
             <li>Applied AI tools to improve productivity in a professional setting through practical exercises.</li>
-            <li>Developed negotiation, problem-solving and time-management skills. Two certificates earned.</li>
           </ul>
+          <a class="proof" href="cert-ailp.jpg" target="_blank" rel="noopener"><img src="cert-ailp.jpg" alt="Certificate of Completion, AI-Integrated Leadership Program, Aspire Institute" loading="lazy" width="128" height="88"><span>View certificate ↗</span></a>
         </article>
         <article>
           <div class="top"><h3>Aspire Leaders Program</h3><span class="when">2025</span></div>
           <p class="org">Aspire Institute · Online program</p>
           <ul>
-            <li>Explored my own leadership style in the module "Discover what kind of Leader you are", through reflection exercises and exchanges with other participants.</li>
+            <li>Completed both modules and 40 hours of coursework, October 2025. Module 1 covered a strengths-based leadership assessment. Module 2 covered leadership, trust, AI and community impact.</li>
+            <li>One of 9,362 finalists who completed the program, out of 45,228 students in Cohort 4 of the 2025 program year.</li>
+            <li>Explored my own leadership style through reflection exercises and exchanges with other participants.</li>
           </ul>
+          <a class="proof" href="cert-aspire-leaders.jpg" target="_blank" rel="noopener"><img src="cert-aspire-leaders.jpg" alt="Certificate, 2025 Aspire Leaders Program, Aspire Institute" loading="lazy" width="128" height="88"><span>View certificate ↗</span></a>
         </article>
         <article>
-          <div class="top"><h3>Informatics and Computer Basics</h3><span class="when">2024</span></div>
+          <div class="top"><h3>Informatics and Computer Basics</h3><span class="when">25 – 29 Nov 2024</span></div>
           <p class="org">STMicroelectronics Foundation · Cubwenge Center</p>
           <ul>
-            <li>Learned to use a computer, Microsoft Word, Excel and PowerPoint, and to browse the internet. Certificate earned.</li>
+            <li>Basic knowledge of Windows, Word, Excel and the internet, taught at Cubwenge Center through the Digital Unify program of the ST Foundation.</li>
           </ul>
+          <a class="proof" href="cert-informatics.jpg" target="_blank" rel="noopener"><img src="cert-informatics.jpg" alt="Training certificate, Informatics and Computer Basics, Cubwenge Center" loading="lazy" width="128" height="88"><span>View certificate ↗</span></a>
         </article>
       </div>
     </div>
@@ -412,9 +426,18 @@ button.copy:hover { background: var(--accent); color: var(--accent-ink); }
   <section id="recommendation">
     <header><p class="label">05</p><h2>Recommendation</h2></header>
     <div class="body">
-      <p class="prose">A professional reference who can speak about my work.</p>
+      <p class="prose">A letter of recommendation and a professional reference.</p>
       <!-- To add a written testimonial later, place a <blockquote> with the referee's real words above the card below. -->
+      <div class="refs">
       <article class="ref">
+        <p class="label">Letter of recommendation</p>
+        <h3>Aspire Institute</h3>
+        <p class="role">Letter dated October 14, 2025, from the Aspire Team</p>
+        <p>The letter acknowledges my work in the Aspire Leaders Program and confirms that I was among the 9,362 finalists who completed it, out of 45,228 students in Cohort 4 of the 2025 program year.</p>
+        <a class="proof" href="recommendation-aspire.jpg" target="_blank" rel="noopener"><img src="recommendation-aspire.jpg" alt="Letter of recommendation from Aspire Institute, October 14, 2025" loading="lazy" width="128" height="88"><span>Read the letter ↗</span></a>
+      </article>
+      <article class="ref">
+        <p class="label">Professional reference</p>
         <div class="who">
           <span class="init" aria-hidden="true">CH</span>
           <div>
@@ -428,6 +451,7 @@ button.copy:hover { background: var(--accent); color: var(--accent-ink); }
           <dt>Contact</dt><dd>Available on request, by writing to me at the address below.</dd>
         </dl>
       </article>
+      </div>
     </div>
   </section>
 
